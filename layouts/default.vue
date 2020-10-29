@@ -1,10 +1,15 @@
 <template>
   <div>
+    <nav>
+      <li>Menu1</li>
+      <li>Menu2</li>
+      <li>Menu3</li>
+    </nav>
     <Nuxt />
   </div>
 </template>
 
-<style>
+<style scoped>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -22,6 +27,14 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
 }
 
 .button--green {
